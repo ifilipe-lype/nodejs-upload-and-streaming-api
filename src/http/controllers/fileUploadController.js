@@ -26,7 +26,6 @@ const fileUploader = multer({
     storage: storage,
     limits: { fileSize:  1 * 1000 * 12000 },
     fileFilter: function (req, file, cb){
-        console.log(file)
         // Set the filetypes, it is optional
         let filetypes = /jpeg|jpg|png|mp3|mpeg/;
         let mimetype = filetypes.test(file.mimetype);
