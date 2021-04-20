@@ -5,6 +5,6 @@ const app = express();
 
 app.use(express.urlencoded());
 
-app.use("/api/", routes);
+app.use(routes);
 
 module.exports = app;
