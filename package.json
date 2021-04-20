@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ifilipe-lype/nodejs-upload-and-streaming-api/issues"
   },
-  "homepage": "https://github.com/ifilipe-lype/nodejs-upload-and-streaming-api#readme"
+  "homepage": "https://github.com/ifilipe-lype/nodejs-upload-and-streaming-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
