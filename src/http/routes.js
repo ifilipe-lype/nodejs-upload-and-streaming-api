@@ -1,11 +1,9 @@
 const router = require("express").Router();
 
-router.get("/stream/:fileId", (req, res) => {
-    res.send(`Streaming ${req.params.fileId} files`);
-});
+const uploadController = require("./controllers/fileUploadController");
+const streamController = require("./controllers/fileStreamController");
 
-router.post("/upload", (req, res) => {
-    res.send("uploading route");
-});
+router.get("/stream/:filename", streamController);
+router.post("/upload", uploadController);
 
 module.exports = router;
