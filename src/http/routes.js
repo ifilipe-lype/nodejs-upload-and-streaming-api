@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
-router.get("/stream", (req, res) => {
-    res.send("streaming route");
+router.get("/stream/:fileId", (req, res) => {
+    res.send(`Streaming ${req.params.fileId} files`);
 });
 
 router.post("/upload", (req, res) => {
